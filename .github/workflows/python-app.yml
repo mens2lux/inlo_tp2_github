@@ -52,6 +52,6 @@ jobs:
     - name: Login to registry
       run: echo ${{ secrets.PERSONAL_TOKEN }} | docker login ghcr.io -u mens2lux --password-stdin
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/mens2lux/tp2:latest
+      run: docker build . --file Dockerfile --tag ghcr.io/mens2lux/inlo_tp2/tp2:latest
     - name: Push the image into the registry
-      run: docker push ghcr.io/mens2lux/tp2:latest
+      run: docker push ghcr.io/mens2lux/inlo_tp2/tp2:latest
